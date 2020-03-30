@@ -1,7 +1,7 @@
 <template>
   <v-col cols="12" md="6" class="DataCard">
     <time-bar-chart
-      :title="$t('検査実施人数')"
+      :title="$t('感染者と濃厚接触者の検査実施数')"
       :title-id="'number-of-inspection-persons'"
       :chart-id="'number-of-inspection-persons'"
       :chart-data="graphData"
@@ -11,7 +11,7 @@
       <template v-slot:description>
         <ul>
           <li>
-            {{ $t('（注）医療機関が保険適用で行った検査は含まれていない') }}
+            {{ $t('（注）報道資料で公開されている検査のみを計上する') }}
           </li>
           <li>
             {{

@@ -2099,14 +2099,14 @@
             }
         ]
     },
-    "lastUpdate": "2020\/03\/31 3:30",
+    "lastUpdate": "2020\/03\/31 4:30",
     "main_summary": {
             "attr": "陽性患者数",
             "value": 5,
             "children": [
                 {
                     "attr": "入院中",
-                    "value": 3,
+                    "value": 3
                 },
                 {
                     "attr": "退院",

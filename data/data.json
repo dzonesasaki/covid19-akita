@@ -2110,7 +2110,7 @@
                 "children": [
                     {
                         "attr": "入院中",
-                        "value": 3,
+                        "value": 3
                     },
                     {
                         "attr": "退院",

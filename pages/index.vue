@@ -78,15 +78,15 @@ export default Vue.extend({
     ConfirmedCasesNumberCard,
     ConfirmedCasesAttributesCard,
     TestedNumberCard,
-    InspectionPersonsNumberCard,
-    TelephoneAdvisoryReportsNumberCard,
-    ConsultationDeskReportsNumberCard,
-    MetroCard,
-    AgencyCard,
-    ShinjukuVisitorsCard,
-    ChiyodaVisitorsCard,
-    ShinjukuStMapCard,
-    TokyoStMapCard
+    //InspectionPersonsNumberCard,
+    //TelephoneAdvisoryReportsNumberCard,
+    //ConsultationDeskReportsNumberCard,
+    //MetroCard,
+    //AgencyCard,
+    //ShinjukuVisitorsCard,
+    //ChiyodaVisitorsCard,
+    //ShinjukuStMapCard,
+    //TokyoStMapCard
   },
   data() {
     const data = {

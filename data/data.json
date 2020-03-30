@@ -2101,21 +2101,37 @@
     },
     "lastUpdate": "2020\/03\/31 4:30",
     "main_summary": {
-            "attr": "陽性患者数",
-            "value": 5,
-            "children": [
-                {
-                    "attr": "入院中",
-                    "value": 3
-                },
-                {
-                    "attr": "退院",
-                    "value": 2
-                },
-                {
-                    "attr": "死亡",
-                    "value": 0
-                }
-            ]
+        "attr": "検査実施人数",
+        "value": 2986,
+        "children": [
+            {
+                "attr": "陽性患者数",
+                "value": 443,
+                "children": [
+                    {
+                        "attr": "入院中",
+                        "value": 394,
+                        "children": [
+                            {
+                                "attr": "軽症・中等症",
+                                "value": 378
+                            },
+                            {
+                                "attr": "重症",
+                                "value": 16
+                            }
+                        ]
+                    },
+                    {
+                        "attr": "退院",
+                        "value": 40
+                    },
+                    {
+                        "attr": "死亡",
+                        "value": 9
+                    }
+                ]
+            }
+        ]
     }
 }

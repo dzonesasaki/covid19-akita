@@ -69,11 +69,11 @@ export default Vue.extend({
     WhatsNew,
     StaticInfo,
     ConfirmedCasesDetailsCard,
-    TestedCasesDetailsCard,
+    //TestedCasesDetailsCard, 検査実施状況
     ConfirmedCasesNumberCard,
     ConfirmedCasesAttributesCard,
-    TestedNumberCard,
-    InspectionPersonsNumberCard,
+    //TestedNumberCard, 検査数
+    InspectionPersonsNumberCard, 検査人数
     //TelephoneAdvisoryReportsNumberCard,
     // ConsultationDeskReportsNumberCard,
     // MetroCard,

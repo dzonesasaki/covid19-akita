@@ -32,7 +32,7 @@
       >
         mdi-close
       </v-icon>
-
+/*
       <nav class="SideNavigation-Menu">
         <div class="SideNavigation-Language">
           <div
@@ -47,7 +47,7 @@
         </div>
         <MenuList :items="items" @click="$emit('closeNavi', $event)" />
       </nav>
-
+*/
       <footer class="SideNavigation-Footer">
         <div class="SideNavigation-Social">
           <a

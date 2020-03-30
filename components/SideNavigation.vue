@@ -32,7 +32,7 @@
       >
         mdi-close
       </v-icon>
-/*
+<!--
       <nav class="SideNavigation-Menu">
         <div class="SideNavigation-Language">
           <div
@@ -47,7 +47,7 @@
         </div>
         <MenuList :items="items" @click="$emit('closeNavi', $event)" />
       </nav>
-*/
+-->
       <footer class="SideNavigation-Footer">
         <div class="SideNavigation-Social">
           <a
@@ -140,7 +140,7 @@ export default Vue.extend({
             'https://www.pref.akita.lg.jp/pages/archive/47796'
         },
         {
-          title: this.$t('知事記者会見'),
+          title: this.$t('秋田県知事記者会見'),
           link:
             'https://www.pref.akita.lg.jp/pages/genre/21552'
         },

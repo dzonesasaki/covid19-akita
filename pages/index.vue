@@ -57,7 +57,7 @@ import InspectionPersonsNumberCard from '@/components/cards/InspectionPersonsNum
 //import ConsultationDeskReportsNumberCard from '@/components/cards/ConsultationDeskReportsNumberCard.vue'
 //import MetroCard from '@/components/cards/MetroCard.vue'
 //import AgencyCard from '@/components/cards/AgencyCard.vue'
-//import { convertDatetimeToISO8601Format } from '@/utils/formatDate'
+import { convertDatetimeToISO8601Format } from '@/utils/formatDate'
 //import ShinjukuVisitorsCard from '@/components/cards/ShinjukuVisitorsCard.vue'
 //import ChiyodaVisitorsCard from '@/components/cards/ChiyodaVisitorsCard.vue'
 //import ShinjukuStMapCard from '@/components/cards/ShinjukuStMapCard.vue'

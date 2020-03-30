@@ -52,7 +52,7 @@ import TestedCasesDetailsCard from '@/components/cards/TestedCasesDetailsCard.vu
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
 import ConfirmedCasesAttributesCard from '@/components/cards/ConfirmedCasesAttributesCard.vue'
 //import TestedNumberCard from '@/components/cards/TestedNumberCard.vue'
-import InspectionPersonsNumberCard from '@/components/cards/InspectionPersonsNumberCard.vue'
+//import InspectionPersonsNumberCard from '@/components/cards/InspectionPersonsNumberCard.vue'
 //import TelephoneAdvisoryReportsNumberCard from '@/components/cards/TelephoneAdvisoryReportsNumberCard.vue'
 //import ConsultationDeskReportsNumberCard from '@/components/cards/ConsultationDeskReportsNumberCard.vue'
 //import MetroCard from '@/components/cards/MetroCard.vue'
@@ -68,12 +68,12 @@ export default Vue.extend({
     PageHeader,
     WhatsNew,
     StaticInfo,
-    ConfirmedCasesDetailsCard,
+    //ConfirmedCasesDetailsCard,
     TestedCasesDetailsCard,
     ConfirmedCasesNumberCard,
     ConfirmedCasesAttributesCard,
     // TestedNumberCard,
-    InspectionPersonsNumberCard,
+    //InspectionPersonsNumberCard,
     //TelephoneAdvisoryReportsNumberCard,
     // ConsultationDeskReportsNumberCard,
     // MetroCard,

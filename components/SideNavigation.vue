@@ -150,10 +150,6 @@ export default Vue.extend({
           link: this.localePath('/about')
         },
         {
-          title: this.$t('お問い合わせ先一覧'),
-          link: this.localePath('/contacts')
-        },
-        {
           title: this.$t('秋田県公式サイト 美の国あきたネット'),
           link: 'https://www.pref.akita.lg.jp/'
         }

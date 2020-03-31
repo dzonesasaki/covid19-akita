@@ -8,7 +8,7 @@
       :date="data.date"
       :unit="$t('人')"
       :url="'https://www.pref.akita.lg.jp/pages/archive/47957#houdouhappyou'"
-      :source="$t(' 県公式サイトの報道発表資料')"
+      :source="$t(' 県公式サイトでみる')"
     >
       <template v-slot:description>
         <ul>

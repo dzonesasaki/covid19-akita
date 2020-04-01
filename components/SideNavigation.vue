@@ -120,17 +120,6 @@ export default Vue.extend({
           link: this.localePath('/parent')
         },
         {
-          icon: 'mdi-account-multiple',
-          title: this.$t('県民の皆様へ'),
-          link: 'https://www.pref.akita.lg.jp/pages/archive/16317'
-        },
-        {
-          icon: 'mdi-domain',
-          title: this.$t('企業の皆様・はたらく皆様へ'),
-          link: this.localePath('/worker'),
-          divider: true
-        },
-        {
           title: this.$t('秋田県の感染者関連の情報'),
           link:
             'https://www.pref.akita.lg.jp/pages/archive/47957'

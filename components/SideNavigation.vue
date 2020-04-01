@@ -16,8 +16,9 @@
             :alt="$t('秋田県')"
           />
           <div class="SideNavigation-HeaderText">
-            {{ $t('秋田県') }}({{ $t('非') }}{{ $t('公式') }})<br />{{ $t('新型コロナウイルス感染症')
-            }}<br />{{ $t('対策サイト') }}
+          {{ $t('menu/新型コロナウイルス感染症') }}<br />{{
+             $t('menu/対策サイト')
+          }}
           </div>
         </nuxt-link>
       </h1>
@@ -117,7 +118,12 @@ export default Vue.extend({
         {
           icon: 'ParentIcon',
           title: this.$t('感染症予防と相談窓口'),
-          link: this.localePath('/parent')
+          link: this.localePath('/parent'),
+          divider: true
+        },
+        {
+        title: this.$t('秋田県公式サイト 美の国あきたネット'),
+        link: 'https://www.pref.akita.lg.jp/'
         },
         {
           title: this.$t('秋田県の感染者関連の情報'),
@@ -132,15 +138,12 @@ export default Vue.extend({
         {
           title: this.$t('秋田県知事記者会見'),
           link:
-            'https://www.pref.akita.lg.jp/pages/genre/21552'
+            'https://www.pref.akita.lg.jp/pages/genre/21552',
+          divider: true
         },
         {
           title: this.$t('当サイトについて'),
           link: this.localePath('/about')
-        },
-        {
-          title: this.$t('秋田県公式サイト 美の国あきたネット'),
-          link: 'https://www.pref.akita.lg.jp/'
         }
       ]
     }

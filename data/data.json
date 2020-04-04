@@ -2178,11 +2178,11 @@
                         "children": [
                             {
                                 "attr": "入院発表前",
-                                "value": 2
+                                "value": null
                             },
                             {
                                 "attr": "入院中",
-                                "value": 7
+                                "value": null
                             }
                         ]
                     },

@@ -8,7 +8,7 @@
       :date="Data.patients.date"
       :info="sumInfoOfPatients"
       :url="'https://www.pref.akita.lg.jp/pages/archive/47957'"
-      :source="$t(' 県公式サイトで見る')"
+      :source="$t('県公式サイトで見る')"
     />
   </v-col>
 </template>

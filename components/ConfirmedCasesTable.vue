@@ -31,7 +31,7 @@
                   <!-- eslint-disable vue/no-v-html-->
                   <span v-html="$t('軽症・<br />中等症')" />
                   <!-- eslint-enable vue/no-v-html-->
-                  <span v-if="軽症中等症 !== null" >
+                  <span v-if="軽症中等症 !== null">
                     <strong>{{ 軽症中等症 }}</strong>
                     <span :class="$style.unit">{{ $t('人') }}</span>
                   </span>
@@ -43,7 +43,7 @@
               <div :class="$style.pillar">
                 <div :class="$style.content">
                   <span>{{ $t('重症') }}</span>
-                  <span v-if="重症 !== null" >
+                  <span v-if="重症 !== null">
                     <strong>{{ 重症 }}</strong>
                     <span :class="$style.unit">{{ $t('人') }}</span>
                   </span>

@@ -97,11 +97,11 @@ export default Vue.extend({
       required: true
     },
     軽症中等症: {
-      type: Number,
+      validator: prop => typeof prop === 'number' || prop === null,
       required: true
     },
     重症: {
-      type: Number,
+      validator: prop => typeof prop === 'number' || prop === null,
       required: true
     },
     死亡: {

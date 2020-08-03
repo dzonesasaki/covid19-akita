@@ -7,7 +7,7 @@
       :chart-data="patientsGraph"
       :date="Data.patients.date"
       :unit="$t('人')"
-      :url="'https://www.pref.akita.lg.jp/pages/archive/47957'"
+      :url="'https://www.pref.akita.lg.jp/pages/archive/51592'"
     />
   </v-col>
 </template>

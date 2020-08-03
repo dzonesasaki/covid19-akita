@@ -128,12 +128,7 @@ export default Vue.extend({
         {
           title: this.$t('秋田県の感染者関連の情報'),
           link:
-            'https://www.pref.akita.lg.jp/pages/archive/47957'
-        },
-        {
-          title: this.$t('中止又は延期するイベント等、施設の休館'),
-          link:
-            'https://www.pref.akita.lg.jp/pages/archive/47796'
+            'https://www.pref.akita.lg.jp/pages/archive/51592'
         },
         {
           title: this.$t('秋田県知事記者会見'),

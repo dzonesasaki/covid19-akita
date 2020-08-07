@@ -7,7 +7,7 @@
       :chart-data="graphData"
       :date="data.date"
       :unit="$t('人')"
-      :url="'https://www.pref.akita.lg.jp/pages/archive/47957#kennsa'"
+      :url="'https://www.pref.akita.lg.jp/pages/archive/51592#kennsa'"
       :source="$t('県公式サイトで見る')"
     >
       <template v-slot:description>

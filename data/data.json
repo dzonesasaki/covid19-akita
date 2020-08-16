@@ -1008,6 +1008,10 @@
                         "value": 11,
                         "children": [
                             {
+                                "attr": "宿泊療養",
+                                "value": 4
+                            },
+                            {
                                 "attr": "軽症・中等症",
                                 "value": null
                             },

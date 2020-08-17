@@ -29,6 +29,20 @@
               <div :class="$style.pillar">
                 <div :class="$style.content">
                   <!-- eslint-disable vue/no-v-html-->
+                  <span v-html="$t('宿泊療養')" />
+                  <!-- eslint-enable vue/no-v-html-->
+                  <span v-if="宿泊療養 !== null">
+                    <strong>{{ 宿泊療養 }}</strong>
+                    <span :class="$style.unit">{{ $t('人') }}</span>
+                  </span>
+                  <span v-else> --- </span>
+                </div>
+              </div>
+            </li>
+            <li :class="[$style.box, $style.short, $style.minor]">
+              <div :class="$style.pillar">
+                <div :class="$style.content">
+                  <!-- eslint-disable vue/no-v-html-->
                   <span v-html="$t('軽症・<br />中等症')" />
                   <!-- eslint-enable vue/no-v-html-->
                   <span v-if="軽症中等症 !== null">
@@ -96,6 +110,10 @@ export default Vue.extend({
     },
     入院中: {
       type: Number,
+      required: true
+    },
+    宿泊療養: {
+      validator: prop => typeof prop === 'number' || prop === null,
       required: true
     },
     軽症中等症: {

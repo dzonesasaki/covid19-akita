@@ -29,20 +29,6 @@
               <div :class="$style.pillar">
                 <div :class="$style.content">
                   <!-- eslint-disable vue/no-v-html-->
-                  <span v-html="$t('宿泊療養')" />
-                  <!-- eslint-enable vue/no-v-html-->
-                  <span v-if="宿泊療養 !== null">
-                    <strong>{{ 宿泊療養 }}</strong>
-                    <span :class="$style.unit">{{ $t('人') }}</span>
-                  </span>
-                  <span v-else> --- </span>
-                </div>
-              </div>
-            </li>
-            <li :class="[$style.box, $style.short, $style.minor]">
-              <div :class="$style.pillar">
-                <div :class="$style.content">
-                  <!-- eslint-disable vue/no-v-html-->
                   <span v-html="$t('軽症・<br />中等症')" />
                   <!-- eslint-enable vue/no-v-html-->
                   <span v-if="軽症中等症 !== null">
@@ -67,6 +53,20 @@
             </li>
           </ul>
         </li>
+        <li :class="[$style.box, $style.staying]">
+          <div :class="$style.pillar">
+            <div :class="$style.content">
+              <!-- eslint-disable vue/no-v-html-->
+              <span v-html="$t('宿泊療養')" />
+              <!-- eslint-enable vue/no-v-html-->
+              <span v-if="宿泊療養 !== null">
+                <strong>{{ 宿泊療養 }}</strong>
+                <span :class="$style.unit">{{ $t('人') }}</span>
+              </span>
+              <span v-else> --- </span>
+            </div>
+          </div>
+        </li>
         <li :class="[$style.box, $style.deceased]">
           <div :class="$style.pillar">
             <div :class="$style.content">
@@ -81,7 +81,10 @@
         <li :class="[$style.box, $style.recovered]">
           <div :class="$style.pillar">
             <div :class="$style.content">
-              <span>{{ $t('退院') }}</span>
+              <span>
+                {{ $t('退院') }}・
+                <br />{{ $t('療養解除') }}
+              </span>
               <span>
                 <strong>{{ 退院 }}</strong>
                 <span :class="$style.unit">{{ $t('人') }}</span>
@@ -268,6 +271,7 @@ $default-boxdiff: 35px;
     width: calc(100% / 2 - #{$default-bdw});
   }
 
+  &.staying,
   &.deceased,
   &.recovered {
     margin-left: $default-bdw;

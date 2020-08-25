@@ -24,7 +24,7 @@ def update_data
     current_data['感染者の概要']['context'].map do |e|
       a = e["陽性確認日"].scan(/\d+/).to_a.map(&:to_i)
       d = Date.new(2020, *a)
-      t = d.iso8601#(d.to_time + (11 * 60 * 60)).utc.iso8601.gsub(/00Z/, "00.000Z")
+      t = d.iso8601
       {
         "例目"        => e["県内症例"],
         "リリース日"   => t, 
@@ -43,7 +43,7 @@ def update_data
     (Date.new(2020, 3, 1)..Date.today).map do |d|
       k = "#{d.month}月#{d.day}日"
       c = h[k] || 0
-      t = d.iso8601#(d.to_time + (17 * 60 * 60)).utc.iso8601.gsub(/00Z/, "00.000Z")
+      t = d.iso8601
       {
         "日付"  => t,
         "小計"  => c,
@@ -57,7 +57,7 @@ def update_data
       # 全角数字が含まれていた
       a = e["期間"].scan(/[0-9０-９]+/).to_a.map(&:to_i)[2,2]
       d = Date.new(2020, *a)
-      t = d.iso8601#(d.to_time + (17 * 60 * 60)).utc.iso8601.gsub(/00Z/, "00.000Z")
+      t = d.iso8601
     end
   end
   data['inspection_persons']['datasets'][0]['data'] = begin

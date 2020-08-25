@@ -1,4 +1,4 @@
-# 秋田県の新型コロナウイルス感染症に関する情報データを更新ツール
+# 秋田県の新型コロナウイルス感染症に関する情報データを更新するツール
 
 [covid19-data-akita](https://github.com/code4akita/covid19-data-akita)で生成されたデータからdata.jsonを更新します。
 

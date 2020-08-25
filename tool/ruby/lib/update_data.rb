@@ -16,7 +16,7 @@ def update_data
   current_data_url = URI.parse("https://covid19-akita.s3.amazonaws.com/current.json")
   current_data = JSON.parse current_data_url.read
 
-  t = Time.now
+  t = Time.parse current_data["感染者の概要"]["updated_at"]
   now = Time.new t.year, t.month, t.day, t.hour, t.min / 10 * 10
   
   data['patients']['date'] = now.strftime "%Y/%m/%d %H:%M"

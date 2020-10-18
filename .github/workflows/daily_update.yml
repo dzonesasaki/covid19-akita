@@ -1,5 +1,5 @@
 
-name: Daily updater
+name: daily updater
 
 on:
   schedule:

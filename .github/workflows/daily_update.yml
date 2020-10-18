@@ -8,6 +8,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container:
+      image: ruby:2.6.4
     steps:
       - uses: actions/checkout@development
       - name: Update
@@ -16,7 +18,10 @@ jobs:
           git config user.email ${EMAIL}
           git remote set-url origin https://${NAME}:${{ secrets.PASS }}@github.com/${NAME}/${REPO}
           cd tool/ruby
-          rake
+          gem install bundler --no-document
+          bundle config set deployment 'true'
+          bundle install --jobs 4 --retry 3
+          bundle exec rake
           cd ../../
           git add .
           git commit -m "daily update"

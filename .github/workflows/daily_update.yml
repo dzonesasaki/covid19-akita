@@ -3,7 +3,7 @@ name: daily updater
 
 on:
   schedule:
-    - cron: '5 * * * *'
+    - cron: '30 17 * * *'
 
 jobs:
   build:
@@ -11,8 +11,8 @@ jobs:
     container:
       image: ruby:2.6.4
     steps:
-      - uses: actions/checkout@development
-      - name: Update
+      - uses: actions/checkout@v1
+      - name: data update
         run: |
           git config user.name ${NAME}
           git config user.email ${EMAIL}

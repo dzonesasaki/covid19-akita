@@ -3,7 +3,7 @@ name: daily updater
 
 on:
   schedule:
-    - cron: '3 18 * * *'
+    - cron: '14 18 * * *'
 
 jobs:
   build:

@@ -3,7 +3,7 @@ name: daily updater
 
 on:
   schedule:
-    - cron: '30 17 * * *'
+    - cron: '5 * * * *'
 
 jobs:
   build:
@@ -14,9 +14,9 @@ jobs:
       - uses: actions/checkout@v1
       - name: data update
         run: |
-          git config user.name ${NAME}
-          git config user.email ${EMAIL}
-          git remote set-url origin https://${NAME}:${{ secrets.PASS }}@github.com/${NAME}/${REPO}
+          git config user.name "daily_updater"
+          git config user.email ${{ secrets.EMAIL }}
+          git remote set-url origin https://asaba-zauberer:${{ secrets.PASS }}@github.com/asaba-zauberer/covid19-akita
           cd tool/ruby
           gem install bundler --no-document
           bundle config set deployment 'true'

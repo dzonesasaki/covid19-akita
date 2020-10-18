@@ -1,0 +1,23 @@
+
+name: daily updater
+
+on:
+  schedule:
+    - cron: '5 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@daily_updater
+      - name: Update
+        run: |
+          git config user.name ${NAME}
+          git config user.email ${EMAIL}
+          git remote set-url origin https://${NAME}:${{ secrets.PASS }}@github.com/${NAME}/${REPO}
+          cd tool/ruby
+          rake
+          cd ../../
+          git add .
+          git commit -m "daily update"
+          git push origin development

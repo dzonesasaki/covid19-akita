@@ -1,4 +1,3 @@
-
 name: daily updater
 
 on:
@@ -11,17 +10,16 @@ jobs:
     container:
       image: ruby:2.6.4
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: data update
+        uses: ruby/setup-ruby@v1
         run: |
           git config user.name "daily_updater"
           git config user.email ${{ secrets.EMAIL }}
           git remote set-url origin https://asaba-zauberer:${{ secrets.PASS }}@github.com/asaba-zauberer/covid19-akita
           cd tool/ruby
-          gem install bundler --no-document
-          bundle config set deployment 'true'
-          bundle install --jobs 4 --retry 3
-          bundle exec rake
+          bundle
+          rake
           cd ../../
           git add .
           git commit -m "daily update" || echo "No changes to commit"

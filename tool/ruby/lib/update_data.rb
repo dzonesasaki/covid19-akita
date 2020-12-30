@@ -57,7 +57,6 @@ def update_data
   data['inspection_persons']['labels'] = begin
     current_data['検査実施件数の推移']['context'].reverse.map do |e|
       # 全角数字が含まれていた
-p e
       a = e["期間"].scan(/[0-9０-９]+/).to_a.map(&:to_i)
       if a.size == 4
         a.unshift 2020
